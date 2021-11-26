@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Not Canvas</title>
+</head>
+<body>
+    <div class="main-container">
+
+        <!-- MAIN NAVIGATION -->
+        <header class="grid-item1">
+            <button class="mobile-menu-button mobile-view" onclick="showMobileMenu()"><img src="img/icon/burger.svg" alt=""></button>
+            <h1 class="mobile-h1 mobile-view" aria-label="hidden">Topical Information</h1>
+            <nav id="navbar" class="mobile-nav-hidden">
+                <ul>
+                    <li id="first-button" class="nav-button">
+                        <h2 class="mobile-view">&Omega; NOT-CANVAS</h2>
+                        <button class="mobile-inside-menu-button mobile-view" onclick="showMobileMenu()">X</button>
+                        <a class="button" href="index.html">
+                            <img id="logo" class="logo" src="img/icon/group107_v6.png" alt="logo">
+                        </a>
+                    </li>
+                    <li class="nav-button">
+                        <button class="button nav-button hover" id="about-button" onclick="showAbout()">
+                            <img class="button-icon" src="img/icon/about.svg" alt="Link to *about*-page">
+                            <span class="button-text">About</span>
+                        </button>
+
+                        <!-- HIDDEN NAVIGATION 1 -->
+                        <section id="about-section" class="hidden-nav about hidden" aria-label="hidden">
+                            <button class="exit-button" onclick="showAbout()">X</button>
+                            <h2>Creators of the website</h2>
+                            <hr>
+                            <figure>
+                                <img src="img/icon/about.svg" alt="Image of one of the creators">
+                                <figcaption><p>This is one of the creators</p></figcaption>
+                            </figure>
+                            <figure>
+                                <img src="img/icon/about_hair.svg" alt="">
+                                <figcaption><p>This is another one of the creators</p></figcaption>
+                            </figure>
+                            <figure>
+                                <img src="img/icon/about_caps_v2.svg" alt="">
+                                <figcaption><p>This is the last one of the creators</p></figcaption>
+                            </figure>
+                        </section>
+                    </li>
+
+                    <li class="nav-button hover">
+                        <a class="button" href="index.html">
+                            <img class="button-icon" src="img/icon/cake.svg" alt="Link to *welcome*-page">
+                            <span class="button-text">Welcome</span>
+                        </a>
+                    </li>
+                    <li class="nav-button hover">
+                        <a class="button" href="reflection.html">
+                            <img class="button-icon" src="img/icon/reflection.svg" alt="Link to *reflection*-page">
+                            <span class="button-text">Reflection</span>
+                        </a>
+                    </li>
+                    <li class="nav-button">
+                        <button class="button nav-button hover" id="topical-button" onclick="showTopical()" style="background-color: var(--active-background);">
+                            <img class="button-icon" src="img/icon/topical_information.svg" alt="Link to *topical-information*-page">
+                            <span class="button-text" style="font-weight: var(--active-thickness); color: var(--active-color);">Topical Information</span>
+                        </button>
+
+                        <!-- HIDDEN NAVIGATION 2 -->
+                        <section id="topical-section" class="hidden-list hidden" aria-label="hidden">
+                            <button class="exit-button" onclick="showTopical()">X</button>
+                            <h2>A list of topical essays</h2>
+                            <hr>
+                            <ul class="hidden-nav-link">
+                                <li><a href="fakenews.html">Fake news</a></li>
+                                <li><a href="criticalthinking.html">Critical thinking</a></li>
+                                <li><a href="technologyandadaptment.html">Technology and adaptement</a></li>
+                            </ul>
+                        </section>
+                    </li>
+
+                    <li class="nav-button hover">
+                        <a class="button" href="accessibility.html">
+                            <img class="button-icon" src="img/icon/accesibility.svg" alt="Link to *accessability*-page">
+                            <span class="button-text">Accessibility</span>
+                        </a>
+                    </li>
+                    <li class="nav-button">
+                        <button class="button nav-button hover" id="funny-button" onclick="showFunny()">
+                            <img class="button-icon" src="img/icon/fun_page.svg" alt="Link to *funny stuff*-page">
+                            <span class="button-text">Funny Stuff</span>
+                        </button>
+
+                        <!-- HIDDEN NAVIGATION 3 -->
+                        <section id="funny-section" class="hidden-list hidden" aria-label="hidden">
+                            <button class="exit-button" onclick="showFunny()">X</button>
+                            <h2>Let's have a litte fun, shall we?</h2>
+                            <hr>
+                            <ul class="hidden-nav-link">
+                                <li><a href="funny.html">Your course progress</a></li>
+                                <li><a href="funny2.html">Vacation activities</a></li>
+                            </ul>
+                        </section>
+                    </li>
+
+                    <li class="hover last-button" onclick="smallNavbar()">
+                        <button class="button nav-button">
+                            <img id="nav-arrow" src="img/icon/arrow.svg" alt="Minimize the sidebar">
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- MAIN CONTENT -->
+        <main class="grid-item2">
+            <section>
+                <header>
+                    <h1>Topical Information</h1>
+                    <hr>
+                    <h2>Fake news</h2>
+                    <p>4 minutes reading time</p>
+                    <hr>
+                    <ul>
+                        <li><a href="#def-fake">Defining "Fake News"</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                    </ul>
+                </header>
+                <article class="flex-article">
+                    <h2 id="def-fake">Defining "Fake-News"</h2>
+                    <p>
+                        The urges of the human mind to exaggerate and invent stories is the root cause for misinformation. 
+                        All the way back to the stone-age people have been trolling each other over how big a fish they’d caught or told lies to other tribes of where to go hunt, 
+                        either to impress or to get ahead. This kind of misinformation, harmless or hurtful, has existed since the dawn of mankind.
+                    </p>
+                    <p>
+                        The famous shoe incident, where Soviet leader Nikita Khruschev banged his shoe in anger when speaking on the UN General Assembly in the 1960s, 
+                        may be the most famous example of spreading misinformation through manipulation. 
+                        This image, published by The New York Times, got debunked several decades later. 
+                        This tells us how long lasting “Fake-News” can be, and how hard it is to guarantee that information hasn’t been tampered with. (Cyr, 2015). <!-- Cité and img -->
+                    </p>
+                    <figure>
+                        <img class="medium-pluss-img" src="img/content/fakeshoe.jpg" alt="Khruschev fake vs real" title="Fake image above, real image below">
+                        <figcaption>
+                            <span>Photo: AP archives</span>
+                        </figcaption>
+                    </figure>
+                    <p>
+                        “Fake-News” can make you believe in something that is not real. 
+                        It may be conspiracy-theories, harmless fun, intended to cause harm, or cause much more harm than intended. 
+                        One of many consequential examples is the shooting inside a pizza restaurant in Washington, 
+                        allegedly claimed to be hosting child-trafficking through the “#pizzagate” conspiracy. (Akpan, 2016). <!-- Cité and img -->
+                    </p>
+                    <p>
+                        A fake story is not problematic in of itself, but the shoe incident displays an important problem. 
+                        When reliable news sources manipulate stories to fit their perspective or pick up on other fake stories and publish these, 
+                        they spread “Fake-News” which misinform the public. 
+                        Combined with the pressure of generating revenue makes for clickbaity articles that spreads through social media like wildfire. 
+                        With the algorithmic echo chambers they provide, reading, watching and believing anything that is fake, has never been easier than today.
+                    </p>
+                    <figure>
+                        <img class="medium-pluss-img" src="img/content/fakenews.jpg" alt="Fake news image" title="Fake news image">
+                        <figcaption>
+                            <span> Photo by <a href="https://unsplash.com/@franganillo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jorge Franganillo</a> on <a href="https://unsplash.com/s/photos/fake-news?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
+                        </figcaption>
+                    </figure>
+                    <p>
+                     <cite>“History is written by the Victors.”</cite> – Winston Churchill. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<!-- Cité -->
+                    </p>
+                    <p>
+                         So, is the written history of mankind really a true story?
+                    </p>
+                </article>
+                <article class="resources">
+                    <h3 id="resources">Resources</h3>
+                    <dl>
+                        <dt>Cyr, A. (2015). The curious case of the Khrushchev shoe. POLITIFACT:</dt>
+                        <dd><a href="https://www.politifact.com/factchecks/2015/jan/18/arthur-cyr/curious-case-khrushchev-shoe/" target="_blank">https://www.politifact.com/factchecks/2015/jan/18/arthur-cyr/curious-case-khrushchev-shoe/</a></dd>
+                    </dl>
+                </article>
+            </section>
+        </main>
+
+        <!-- SIDE CONTENT -->
+        <aside class="grid-item3">
+            <header>
+                <img src="img/icon/group107_v6.png" alt="">
+                <h2>
+                    Quick-bits!
+                </h2>
+                <hr>
+            </header>
+            <section class="aside">
+                <h3>Elaboration:</h3>
+                <dl>
+                    <dt>#Pizzagate conspiracy</dt>
+                    <dd>Is a debunked conspiracy theory that went viral during the 2016 United States presidential election cycle. It has been extensively discredited by a wide range of organizations, including the Washington, D.C. police.
+                        In March 2016, the personal email account of John Podesta, Hillary Clinton's campaign chair, was hacked in a spear-phishing attack. WikiLeaks published his emails in November 2016. Proponents of the Pizzagate conspiracy theory falsely claimed the emails contained coded messages that connected several high-ranking Democratic Party officials and U.S. restaurants with an alleged human trafficking and child sex ring. One of the establishments allegedly involved was the Comet Ping Pong pizzeria in Washington, D.C.</dd>
+                </dl>
+
+                <h3>Words:</h3>
+                <dl>
+                    <dt>Misinformation</dt>
+                    <dd>-Misleading, inaccurate or completely false information. 
+                        Which is communicated without the explicit intent to deceive.</dd>
+                    <dt>Disinformation</dt>
+                    <dd>-False information that is shared with the intention of misleading people. 
+                        To attempt to create division and stir up fear.</dd>
+                    <dt>Conspiracy theory</dt>
+                    <dd>-A theory that rejects the standard explanation for an event.</dd>
+                    <dt>Echo chamber</dt>
+                    <dd>-An environment in which the same opinions are repeatedly voiced and promoted,
+                        so that people are not exposed to opposing views.</dd>
+                </dl>
+            </section>
+        </aside>
+
+        <!-- FOOTER CONTENT -->
+        <footer class="grid-item4">
+            <hr>
+            <p> 
+                This is not Canvas!
+            </p>
+        </footer>
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>

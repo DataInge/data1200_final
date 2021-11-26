@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Funny Stuff</title>
+    <style>
+        #fag_1 {
+            border-radius: 20px;
+            border: 3px solid #008507;
+            padding: 20px;
+            margin: 1em;
+        }
+        #fag_2 {
+            border-radius: 20px;
+            border: 3px solid #a0c400;
+            padding: 20px;
+            margin: 1em;
+        }
+        #fag_3 {
+            border-radius: 20px;
+            border: 3px solid #c20000;
+            padding: 20px;
+            margin: 1em;
+        }
+        #fag_4 {
+            border-radius: 20px;
+            border: 3px solid #60aa00;
+            padding: 20px;
+            margin: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        
+        <!-- MAIN NAVIGATION -->
+        <header class="grid-item1">
+            <button class="mobile-menu-button mobile-view" onclick="showMobileMenu()"><img src="img/icon/burger.svg" alt=""></button>
+            <h1 class="mobile-h1 mobile-view" aria-label="hidden">Funny Stuff</h1>
+            <nav id="navbar" class="mobile-nav-hidden">
+                <ul>
+                    <li id="first-button" class="nav-button">
+                        <h2 class="mobile-view">&Omega; NOT-CANVAS</h2>
+                        <button class="mobile-inside-menu-button mobile-view" onclick="showMobileMenu()">X</button>
+                        <a class="button" href="index.html">
+                            <img id="logo" class="logo" src="img/icon/group107_v6.png" alt="">
+                        </a>
+                    </li>
+                    <li class="nav-button">
+                        <button class="button nav-button hover" id="about-button" onclick="showAbout()">
+                            <img class="button-icon" src="img/icon/about.svg" alt="Link to *about*-page">
+                            <span class="button-text">About</span>
+                        </button>
+
+                        <!-- HIDDEN NAVIGATION 1-->
+                        <section id="about-section" class="hidden-nav about hidden" aria-label="hidden">
+                            <button class="exit-button" onclick="showAbout()">X</button>
+                            <h2>Creators of the website</h2>
+                            <hr>
+                            <figure>
+                                <img src="img/icon/about.svg" alt="">
+                                <figcaption><p>This is one of the creators</p></figcaption>
+                            </figure>
+                            <figure>
+                                <img src="img/icon/about_hair.svg" alt="">
+                                <figcaption><p>This is another one of the creators</p></figcaption>
+                            </figure>
+                            <figure>
+                                <img src="img/icon/about_caps_v2.svg" alt="">
+                                <figcaption><p>This is the last one of the creators</p></figcaption>
+                            </figure>
+                        </section>
+                    </li>
+
+                    <li class="nav-button hover">
+                        <a class="button" href="index.html">
+                            <img class="button-icon" src="img/icon/cake.svg" alt="Link to *welcome*-page">
+                            <span class="button-text">Welcome</span>
+                        </a>
+                    </li>
+                    <li class="nav-button hover">
+                        <a class="button" href="reflection.html">
+                            <img class="button-icon" src="img/icon/reflection.svg" alt="Link to *reflection*-page">
+                            <span class="button-text">Reflection</span>
+                        </a>
+                    </li>
+                    <li class="nav-button">
+                        <button class="button nav-button hover" id="topical-button" onclick="showTopical()">
+                            <img class="button-icon" src="img/icon/topical_information.svg" alt="Link to *topical-information*-page">
+                            <span class="button-text" >Topical Information</span>
+                        </button>
+
+                        <!-- HIDDEN NAVIGATION 2-->
+                        <section id="topical-section" class="hidden-list hidden" aria-label="hidden">
+                            <button class="exit-button" onclick="showTopical()">X</button>
+                            <h2>A list of topical essays</h2>
+                            <hr>
+                            <ul class="hidden-nav-link">
+                                <li><a href="fakenews.html">Fake news</a></li>
+                                <li><a href="criticalthinking.html">Critical thinking</a></li>
+                                <li><a href="technologyandadaptment.html">Technology and adaptement</a></li>
+                            </ul>
+                        </section>
+                    </li>
+
+                    <li class="nav-button hover">
+                        <a class="button" href="accessibility.html">
+                            <img class="button-icon" src="img/icon/accesibility.svg" alt="Link to *accessability*-page">
+                            <span class="button-text">Accessibility</span>
+                        </a>
+                    </li>
+                    <li class="nav-button">
+                        <button class="button nav-button hover" id="funny-button" onclick="showFunny()" style="background-color: var(--active-background);">
+                            <img class="button-icon" src="img/icon/fun_page.svg" alt="Link to *funny stuff*-page">
+                            <span class="button-text" style="font-weight: var(--active-thickness); color: var(--active-color);">Funny Stuff</span>
+                        </button>
+
+                        <!-- HIDDEN NAVIGATION 3-->
+                        <section id="funny-section" class="hidden-list hidden" aria-label="hidden">
+                            <button class="exit-button" onclick="showFunny()">X</button>
+                            <h2>Let's have a litte fun, shall we?</h2>
+                            <hr>
+                            <ul class="hidden-nav-link">
+                                <li><a href="funny.html">Your course progress</a></li>
+                                <li><a href="funny2.html">Vacation activities</a></li>
+                            </ul>
+                        </section>
+                    </li>
+
+                    <li class="hover last-button" onclick="smallNavbar()">
+                        <button class="button nav-button">
+                            <img id="nav-arrow" src="img/icon/arrow.svg" alt="Minimize the sidebar">
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- MAIN CONTENT -->
+        <main class="grid-item2">
+            <section>
+                    <header>
+                        <h1>This is a helpful tool to check your course progress</h1>
+                        <hr>
+                    </header>
+                <article>
+                    <p>
+                        This tool uses AI data-tracking, cookie-munching and mind-reading to know *exactly how you are doing in your studies.
+                        We **wholeheartedly believe in your ability to manage your own workload to this tool is here for your convenience.
+                    </p>
+                    <p>
+                        While we know this data to be ***accurate we will note that alcohol (or other mood altering substances),
+                        as well as oversupportive parents or loved ones, might potentially throw the mind-reader off. 
+                        We therefor encourage all students to abstain from alcohol and all contact with supportive humans for the ****duration of their education.
+                    </p>
+                    <p>
+                        This final bar represents your mental health when this subject crosses your mind.
+                        A high bar suggests that the course does not heavily impact your mental stability.
+                        A low bar suggests you should make use of one of SIO's many mental heath professionals.
+                    </p>
+                    <p>
+                        Your remaining mental *****HP, so to speak.
+                    </p>
+                </article>
+                <article>
+                    <section id="fag_1">
+                        <h2>
+                            DAPE1300-1 21H Diskret matematikk
+                        </h2>
+                        <p>
+                            <label>Curriculum</label>
+                            <br>
+                            <progress value="47" max="100"></progress> 47%
+                        </p>
+                        <p>
+                            <label>Assignments</label>
+                            <br>
+                            <progress value="54" max="100"></progress> 54%
+                        </p>
+                        <p>
+                            <label>Obligs</label>
+                            <br>
+                            <progress value="69" max="100"></progress> 69%
+                        </p>
+
+                        <p>
+                            <label>HP</label>
+                            <meter value="0.8">80%</meter>
+                        </p>
+                    </section>
+                    <section id="fag_2">
+                        <h2>
+                            DAPE1400-1 21H Programmering
+                        </h2>
+                        <p>
+                            <label>Curriculum</label>
+                            <br>
+                            <progress value="32" max="100"></progress> 32%
+                        </p>
+                        <p>
+                            <label>Assignments</label>
+                            <br>
+                            <progress value="92" max="100"></progress> 92%
+                        </p>
+                        <p>
+                            <label>Obligs</label>
+                            <br>
+                            <progress value="100" max="100"></progress> 100%
+                        </p>
+                        <p>
+                            <label>HP</label>
+                            <meter value="0.6">60%</meter>
+                        </p>
+                    </section>
+                    <section id="fag_3">
+                        <h2>
+                            DATA1100-1 21H Teknologi og samfunn for programmerere
+                        </h2>
+                        <p>
+                            <label>Curriculum</label>
+                            <br>
+                            <progress value="?" max="100"></progress> ?%
+                        </p>
+                        <p>
+                            <label>Assignments</label>
+                            <br>
+                            <progress value="?" max="100"></progress> ?%
+                        </p>
+                        <p>
+                            <label>Obligs</label>
+                            <br>
+                            <progress value="100" max="100"></progress> 100%
+                        </p>
+                        <p>
+                            <label>HP</label>
+                            <meter value="0.2">20%</meter>
+                        </p>
+                    </section>
+                    <section id="fag_4">
+                        <h2>    
+                            DATA1200-1 21H Webutvikling og inkluderende design
+                        </h2>
+                        <p>
+                            <label>Curriculum</label>
+                            <br>
+                            <progress value="87" max="100"></progress> 87%
+                        </p>
+                        <p>
+                            <label>Assignments</label>
+                            <br>
+                            <progress value="52" max="100"></progress> 52%
+                        </p>
+                        <p>
+                            <label>Obligs</label>
+                            <br>
+                            <progress value="100" max="100"></progress> 100%
+                        </p>
+                        <p>
+                            <label>HP</label>
+                            <meter value="0.75">75%</meter>
+                        </p>
+                    </section>
+                </article>
+            </section>
+
+            <p style="font-size: 8px;"> * : Not exactly! Don't hold us to that!</p>
+            <p style="font-size: 8px;"> ** : Halfheartedly... At best!</p>
+            <p style="font-size: 8px;"> *** : Only applies if you don't have ad- or cookie-blockers in your browser.</p>
+            <p style="font-size: 8px;"> **** : There will be plenty of time for human interaction once you are done and a productive part of the machine.</p>
+            <p style="font-size: 8px;"> ***** : Armor Class and THAC0 will have no alleviating effect on strikes directed at your mental health </p>
+        </main>
+        
+        <!-- SIDE CONTENT -->
+        <aside class="grid-item3">
+            <header>
+                <img src="img/icon/group107_v6.png" alt="">
+                <h2>
+                    To-do or not to-do?!
+                </h2>
+                <hr>
+            </header>
+            <section class="aside">
+                <h3>
+                    Nylige varsler
+                </h3>
+                <ul>
+                    <li>Husk at oblig 12 i DATA1100 har innleveringsfrist NÅR SOM HELST!</li>
+                    <li>Q&A for gårsdagens Q&A holdes på et eller annet tidspunkt</li>
+                    <li>Merk at alle grupperom for dette, og neste, semester er booket. Begynn å book rom for andre semester 2022 snarest dersom du mistenker at du, eller noen andre du kjenner, kan ha bruk for det</li>
+                    <li>OsloMET slår hardt ned på blackmarket salg av grupperoms-bookinger. Flere studenter har blitt dømt til ekstra oblig i DATA1100</li>
+                    <li>Fristen for innsending av andre forsøk på oblig 2 i DATA1400 er i morgen. Dersom du ikke enda har fått tilbakemelding på første forsøk anbefales det at du begynner å jobbe med andre forsøk snarest. Bare sånn i tilfelle.</li>
+                    <li>Are you having a hard time finding relevant notifications before it's too late? Have a look at this list for some suggestions of places you might have missed</li>
+                </ul>
+            </section>
+            <section class="aside varsler">
+                <h3>
+                    Emnegrupper
+                </h3>
+                <p>Projectgroup group for project 2 group 2014</p>
+                <p>Projectgroup group for project 3 group 93081</p>
+                <p>Projectgroup group for project 4 group 981</p>
+                <p>Projectgroup group for project 5 group 912388521</p>
+            </section>
+            <section class="aside">
+                <h3>
+                    Nylige tilbakemeldinger
+                </h3>
+                <ul>
+                    <li>
+                        Oblig 4 DATA1200
+                        <ul>
+                            <li>Godkjent</li>
+                            <li>"Akseptabelt"</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Oblig 1 DATA1400
+                        <ul>
+                            <li>Godkjent</li>
+                            <li>"Bra, men pass på at skallkoden følges. Også der den virker absurd. Tor prøver å gi alle studenter et realistisk inntrykk av hvordan arbeidslivet vil fremtone seg."</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Oblig 11 DATA1100
+                        <ul>
+                            <li>Ikke godkjent</li>
+                            <li>"NO COOKIE FOR YOU!"</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </aside>
+
+        <!-- FOOTER CONTENT -->
+        <footer class="grid-item4">
+            <hr>
+            <p> 
+                This is not Canvas!
+            </p>
+        </footer>
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+
+    <style>
+        #fag_1 {
+            border-radius: 20px;
+            border: 3px solid #008507;
+            padding: 20px;
+            margin: 1em;
+        }
+        #fag_2 {
+            border-radius: 20px;
+            border: 3px solid #a0c400;
+            padding: 20px;
+            margin: 1em;
+        }
+        #fag_3 {
+            border-radius: 20px;
+            border: 3px solid #c20000;
+            padding: 20px;
+            margin: 1em;
+        }
+        #fag_4 {
+            border-radius: 20px;
+            border: 3px solid #60aa00;
+            padding: 20px;
+            margin: 1em;
+        }
+    </style>
+</html>

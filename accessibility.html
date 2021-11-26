@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Not Canvas</title>
+</head>
+<body>
+    <div class="main-container">
+
+        <!-- MAIN NAVIGATION -->
+        <header class="grid-item1">
+            <button class="mobile-menu-button mobile-view" onclick="showMobileMenu()"><img src="img/icon/burger.svg" alt=""></button>
+            <h1 class="mobile-h1 mobile-view" aria-label="hidden">Accessibility</h1>
+            <nav id="navbar" class="mobile-nav-hidden">
+                <ul>
+                    <li id="first-button" class="nav-button">
+                        <h2 class="mobile-view">&Omega; NOT-CANVAS</h2>
+                        <button class="mobile-inside-menu-button mobile-view" onclick="showMobileMenu()">X</button>
+                        <a class="button" href="index.html">
+                            <img id="logo" class="logo" src="img/icon/group107_v6.png" alt="">
+                        </a>
+                    </li>
+                    <li class="nav-button">
+                        <button class="button nav-button hover" id="about-button" onclick="showAbout()">
+                            <img class="button-icon" src="img/icon/about.svg" alt="Link to *about*-page">
+                            <span class="button-text">About</span>
+                        </button>
+
+                        <!-- HIDDEN NAVIGATION 1-->
+                        <section id="about-section" class="hidden-nav about hidden" aria-label="hidden">
+                            <button class="exit-button" onclick="showAbout()">X</button>
+                            <h2>Creators of the website</h2>
+                            <hr>
+                            <figure>
+                                <img src="img/icon/about.svg" alt="">
+                                <figcaption><p>This is one of the creators</p></figcaption>
+                            </figure>
+                            <figure>
+                                <img src="img/icon/about_hair.svg" alt="">
+                                <figcaption><p>This is another one of the creators</p></figcaption>
+                            </figure>
+                            <figure>
+                                <img src="img/icon/about_caps_v2.svg" alt="">
+                                <figcaption><p>This is the last one of the creators</p></figcaption>
+                            </figure>
+                        </section>
+                    </li>
+
+                    <li class="nav-button hover">
+                        <a class="button" href="index.html">
+                            <img class="button-icon" src="img/icon/cake.svg" alt="Link to *welcome*-page">
+                            <span class="button-text">Welcome</span>
+                        </a>
+                    </li>
+                    <li class="nav-button hover">
+                        <a class="button" href="reflection.html">
+                            <img class="button-icon" src="img/icon/reflection.svg" alt="Link to *reflection*-page">
+                            <span class="button-text">Reflection</span>
+                        </a>
+                    </li>
+                    <li class="nav-button">
+                        <button class="button nav-button hover" id="topical-button" onclick="showTopical()">
+                            <img class="button-icon" src="img/icon/topical_information.svg" alt="Link to *topical-information*-page">
+                            <span class="button-text" >Topical Information</span>
+                        </button>
+
+                        <!-- HIDDEN NAVIGATION 2-->
+                        <section id="topical-section" class="hidden-list hidden" aria-label="hidden">
+                            <button class="exit-button" onclick="showTopical()">X</button>
+                            <h2>A list of topical essays</h2>
+                            <hr>
+                            <ul class="hidden-nav-link">
+                                <li><a href="fakenews.html">Fake news</a></li>
+                                <li><a href="criticalthinking.html">Critical thinking</a></li>
+                                <li><a href="technologyandadaptment.html">Technology and adaptement</a></li>
+                            </ul>
+                        </section>
+                    </li>
+
+                    <li class="nav-button hover">
+                        <a class="button nav-button" href="accessibility.html" style="background-color: var(--active-background);">
+                            <img class="button-icon" src="img/icon/accesibility.svg" alt="Link to *accessability*-page">
+                            <span class="button-text" style="font-weight: var(--active-thickness); color: var(--active-color);">Accessibility</span>
+                        </a>
+                    </li>
+                    <li class="nav-button">
+                        <button class="button nav-button hover" id="funny-button" onclick="showFunny()">
+                            <img class="button-icon" src="img/icon/fun_page.svg" alt="Link to *funny stuff*-page">
+                            <span class="button-text">Funny Stuff</span>
+                        </button>
+
+                        <!-- HIDDEN NAVIGATION 3-->
+                        <section id="funny-section" class="hidden-list hidden" aria-label="hidden">
+                            <button class="exit-button" onclick="showFunny()">X</button>
+                            <h2>Let's have a litte fun, shall we?</h2>
+                            <hr>
+                            <ul class="hidden-nav-link">
+                                <li><a href="funny.html">Your course progress</a></li>
+                                <li><a href="funny2.html">Vacation activities</a></li>
+                            </ul>
+                        </section>
+                    </li>
+
+                    <li class="hover last-button" onclick="smallNavbar()">
+                        <button class="button nav-button">
+                            <img id="nav-arrow" src="img/icon/arrow.svg" alt="Minimize the sidebar">
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- MAIN CONTENT -->
+        <main class="grid-item2">
+            <section>
+                <header>
+                    <h1>Accessibility</h1>
+                    <hr>
+                </header>
+                <article class="flex-article">
+                    <h2 id="accessibility">Considerations and execution</h2>
+                    <p>
+                        Our initial idea for the website was that the best way to invoke the experience of being a first semester student at OsloMet would be to have the website resemble Canvas.
+                        We decided that we would include some of the typical design principles of canvas, but alter them in a way that would make sense in the confines of the assignment.
+                        We would start out by building a functioning site that implemented the basic Canvas layout.
+                    </p>
+                    <figure class="accessibility-figures">
+                        <img class="big-img" src="img/content/site_first.png" alt="An image showing the site in its infancy" title="First test of the website">
+                        <figcaption>
+                            <span>The first test "build" of the website</span>
+                        </figcaption>
+                    </figure>
+                    <figure class="accessibility-figures">
+                        <img class="big-img" src="img/content/site_second.png" alt="An image showing the site taking shape" title="The site look is coming together">
+                        <figcaption>
+                            <span>It's getting there</span>
+                        </figcaption>
+                    </figure>
+                    <p class="small-p"> 
+                        We know that we wanted to select colors that would contrast nicely with the black font and the white background,
+                        and that would be easily distinguishable from both for any user with color vision deficiency.
+                        We also wanted to make sure that the color would be a pleasant and welcoming color.
+                        #009FB7 fit the bill quite nicely.
+                        <br><br>
+                        Checking the color using Coblis showed no legability-issues and, our friend #009FB7, looks quite fetching if I say so myself.
+                    </p>
+                    <figure class="accessibility-figures">
+                        <img class="small-img" src="img/content/site_basecolor_first.png" alt="An image of the color we chose for the sidebar" title="A pleasant shade of blue">
+                        <figcaption>
+                            <span>#009FB7, in all its glory</span>
+                        </figcaption>
+                    </figure>
+                    <p class="small-p">
+                        The icons were also made from scratch to be ligible and self explanatory and as they are vectors, are made to be infinitely scalable.
+                        We wanted the icons to share the design principles as those used on canvas, but to be easily distinguishable from those icons.
+                        <br><br>
+                        After a little bit of tweaking and they great. Small enough the have some breathing room, 
+                        big enough to be easily read and clear enough in their design to be easily distinguished and to give an indication of the content.
+                    </p>
+                    <figure class="accessibility-figures">
+                        <img class="tall-img" src="img/content/icon_first.png" alt="the icons, rev1" title="The icons are in place">
+                        <figcaption>
+                            <span>The icons are in place</span>
+                        </figcaption>
+                    </figure>
+                    <figure class="accessibility-figures">
+                        <img class="tall-img" src="img/content/icon_second.png" alt="the icons, rev2" title="The icons are looking good">
+                        <figcaption>
+                            <span>Looking better by the day</span>
+                        </figcaption>
+                    </figure>
+                    <p>
+                        The code has also been written with a clear focus on readability.
+                        Each section is clearly separated with comments and variables are named in a way to make it easy for any coder to tell what they represent.
+                        The layout, indents and flow of each page is also consistent and readable at a glance. 
+                        Images are handled the same site-wide, with alt's and titles and sources where necessary.
+                    </p>
+                    <figure class="accessibility-figures">
+                        <img class="big-img" src="img/content/site_code_first.png" alt="An image of the code in the early stages" title="Coding with other coders in mind">
+                        <figcaption>
+                            <span>Making it readable</span>
+                        </figcaption>
+                    </figure>
+                    <p>
+                        As the site grew larger this early attention to readability started paying off as we were revisiting, modifying and tweaking.
+                    </p>
+                    <figure class="accessibility-figures">
+                        <img class="big-img" src="img/content/site_code_third.png" alt="An image showing the code getting denser" title="Coding with other coders in mind 2.0">
+                        <figcaption>
+                            <span>Readability paying off</span>
+                        </figcaption>
+                    </figure>
+                    <h2 id="checking">Checking and analyzing</h2>
+                    <p>
+                        When the site was finally up and running, looking good and containing content it was time to start running it through its paces.
+                        We had, right from the start, decided to make this design clean. 
+                        Focusing more on intelligability then we had in our previous assignments, so we didn't foresee many issues.
+                    </p>
+                    <p>
+                        Wave-plugin threw up a handful of alerst, but only one error. Low contrast between a highlighted category and the font:
+                    </p>
+                    <figure class="accessibility-figures">
+                        <img class="small-img" src="img/content/accessabilityWave1.jpg" alt="Image showing the low contrast in question" title="Slightly low contrast, perhaps">
+                        <figcaption>
+                            <span>Low'ish contrast</span>
+                        </figcaption>
+                    </figure>
+                    <p>
+                        The plugin "Axe accessibility" also threw up contrast concerns as well as some icon-text errors.
+                        We went on to fix the errors and increasing the contrast slightly to make it more readable.
+                    </p>
+                    <p>
+                        Running the site through W3C's HTML and CSS validators brings up a number of errors and warnings however. 
+                        Mostly related to comments and stray end-tags. Nothing that isn't easily taken care of.
+                        After having run the site through some readers we made our final fixes, so that the "reader" experience would be less confusing.
+                        This boiled down to chainging some alt's and title's, as tabbing and navigating worked well.
+                    </p>
+                    <p>
+                        All in all the focus on clean, readable code, legible design and simple layout seem to have payed off in the end.
+                        The site works without issue, validators report the code as clean and plugins report no glaring issues related to accessibility. 
+                        Lastly we worked to make sure that the site works well on different resolutions. Scaling for smaller resolutions and adjusting some text-sizes.
+                    </p>
+                    <p>
+                        Very last note! We have added an event listener in the script file which changes the color scheme of the menu based on the screen size of different devices.
+                        On the basis of that no one usually resize their web browser, again and again, many times a day to check the responsiveness, except us webdesigner of course,
+                        the effect of the color change does not take effect untill you refresh the page. So when testing for responsiveness, remember to refresh the page to see the color change.
+                        And the search-bar is just illustrative to what might come.
+                    </p>
+                </article>
+            </section>
+        </main>
+
+        <!-- SIDE CONTENT -->
+        <aside class="grid-item3">
+            <header>
+                <img src="img/icon/group107_v6.png" alt="">
+                <h2>
+                    Search the page!
+                </h2>
+                <hr>
+            </header>
+            <section class="aside">
+                <script async src="https://cse.google.com/cse.js?cx=4ef18d06bee1c40d1"></script>
+                <div class="gcse-search"></div>
+            </section>
+        </aside>
+
+        <!-- FOOTER CONTENT -->
+        <footer class="grid-item4">
+            <hr>
+            <p> 
+                This is not Canvas!
+            </p>
+        </footer>
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>

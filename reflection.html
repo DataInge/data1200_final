@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Not Canvas</title>
+</head>
+<body>
+    <div class="main-container">
+
+        <!-- MAIN NAVIGATION -->
+        <header class="grid-item1">
+            <button class="mobile-menu-button mobile-view" onclick="showMobileMenu()"><img src="img/icon/burger.svg" alt=""></button>
+            <h1 class="mobile-h1 mobile-view" aria-label="hidden">Reflection</h1>
+            <nav id="navbar" class="mobile-nav-hidden">
+                <ul>
+                    <li id="first-button" class="nav-button">
+                        <h2 class="mobile-view">&Omega; NOT-CANVAS</h2>
+                        <button class="mobile-inside-menu-button mobile-view" onclick="showMobileMenu()">X</button>
+                        <a class="button" href="index.html">
+                            <img id="logo" class="logo" src="img/icon/group107_v6.png" alt="">
+                        </a>
+                    </li>
+                    <li class="nav-button">
+                        <button class="button nav-button hover" id="about-button" onclick="showAbout()">
+                            <img class="button-icon" src="img/icon/about.svg" alt="Link to *about*-page">
+                            <span class="button-text">About</span>
+                        </button>
+
+                        <!-- HIDDEN NAVIGATION 1-->
+                        <section id="about-section" class="hidden-nav about hidden" aria-label="hidden">
+                            <button class="exit-button" onclick="showAbout()">X</button>
+                            <h2>Creators of the website</h2>
+                            <hr>
+                            <figure>
+                                <img src="img/icon/about.svg" alt="">
+                                <figcaption><p>This is one of the creators</p></figcaption>
+                            </figure>
+                            <figure>
+                                <img src="img/icon/about_hair.svg" alt="">
+                                <figcaption><p>This is another one of the creators</p></figcaption>
+                            </figure>
+                            <figure>
+                                <img src="img/icon/about_caps_v2.svg" alt="">
+                                <figcaption><p>This is the last one of the creators</p></figcaption>
+                            </figure>
+                        </section>
+                    </li>
+
+                    <li class="nav-button hover">
+                        <a class="button" href="index.html">
+                            <img class="button-icon" src="img/icon/cake.svg" alt="Link to *welcome*-page">
+                            <span class="button-text">Welcome</span>
+                        </a>
+                    </li>
+                    <li class="nav-button hover">
+                        <a class="button nav-button" href="reflection.html" style="background-color: var(--active-background);">
+                            <img class="button-icon" src="img/icon/reflection.svg" alt="Link to *reflection*-page">
+                            <span class="button-text" style="font-weight: var(--active-thickness); color: var(--active-color);">Reflection</span>
+                        </a>
+                    </li>
+                    <li class="nav-button">
+                        <button class="button nav-button hover" id="topical-button" onclick="showTopical()">
+                            <img class="button-icon" src="img/icon/topical_information.svg" alt="Link to *topical-information*-page">
+                            <span class="button-text">Topical Information</span>
+                        </button>
+
+                        <!-- HIDDEN NAVIGATION 2-->
+                        <section id="topical-section" class="hidden-list hidden" aria-label="hidden">
+                            <button class="exit-button" onclick="showTopical()">X</button>
+                            <h2>A list of topical essays</h2>
+                            <hr>
+                            <ul class="hidden-nav-link">
+                                <li><a href="fakenews.html">Fake news</a></li>
+                                <li><a href="criticalthinking.html">Critical thinking</a></li>
+                                <li><a href="technologyandadaptment.html">Technology and adaptement</a></li>
+                            </ul>
+                        </section>
+                    </li>
+
+                    <li class="nav-button hover">
+                        <a class="button nav-button" href="accessibility.html">
+                            <img class="button-icon" src="img/icon/accesibility.svg" alt="Link to *accessability*-page">
+                            <span class="button-text">Accessibility</span>
+                        </a>
+                    </li>
+                    <li class="nav-button">
+                        <button class="button nav-button hover" id="funny-button" onclick="showFunny()">
+                            <img class="button-icon" src="img/icon/fun_page.svg" alt="Link to *funny stuff*-page">
+                            <span class="button-text">Funny Stuff</span>
+                        </button>
+
+                        <!-- HIDDEN NAVIGATION 3-->
+                        <section id="funny-section" class="hidden-list hidden" aria-label="hidden">
+                            <button class="exit-button" onclick="showFunny()">X</button>
+                            <h2>Let's have a litte fun, shall we?</h2>
+                            <hr>
+                            <ul class="hidden-nav-link">
+                                <li><a href="funny.html">Your course progress</a></li>
+                                <li><a href="funny2.html">Vacation activities</a></li>
+                            </ul>
+                        </section>
+                    </li>
+
+                    <li class="hover last-button" onclick="smallNavbar()">
+                        <button class="button nav-button">
+                            <img id="nav-arrow" src="img/icon/arrow.svg" alt="Minimize the sidebar">
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- MAIN CONTENT -->
+        <main class="grid-item2">
+            <section>
+                <header>
+                    <h1>Reflection</h1>
+                    <hr>
+                </header>
+                <article class="flex-article">
+                    <h2 id="reflection">New beginnings</h2>
+                    <p>
+                        Ever since I was a kid all I wanted was to be an astronaut. It's safe to say things haven't really worked out.
+                    </p>
+                    <p>
+                        When junior high came along I started strugling with math, and a common assumption at the time was that if smart kids didn't struggle with math.
+                        I didn't feel stupid, but I was also aware of the Dunning–Kruger effect which states, in crude terms, that the dumber someone is the less cognizant they tend to be of their stupidity.
+                        I knew that no dummy ever made it into space, and that the path that I had laid our for myself in computers, programming, science and technology probably didn't resonate with stupidity either.
+                    </p>
+                    <figure>
+                        <img class="medium-minus-img" img src="img/content/Basic.JPG" alt="Basic Code" title="Basic on the Commodore 128">
+                        <figcaption>
+                            <span>A small BASIC program on the Commodore 128</span>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img class="medium-minus-img" img src="img/content/subsim.JPG" alt="Submarine tracking" title="The BASIC program running">
+                        <figcaption>
+                            <span>A submarine radar "simulation"</span>
+                        </figcaption>
+                    </figure>
+                    <p>
+                        I threw my BASIC and C++ books away, put away my soldering equipment and I went on with my life.
+                        All hopes of a future in astrophysics, engineering, programming or science casually tossed aside. People don't suddenly <strong>overcome</strong> stupidity, so I had to find something else to do with my life. 
+                    </p>
+                    <p>
+                        I went on to have a 20 year long career in music and earned a masters degree in musicology (as well as half a bachelor in archeology, for some reason) along the way. 
+                        Suddenly, about four years ago, i became a parent. This lifechanging event prompted me to take a look at myself and my life and ask some uncomfortable questions.
+                        I didn't want my children to grow up with a father who so haphaserdly threw his dreams away. 
+                        What kind of role model would I be, and what signals did It send that I, in abandoning my interests, kept perpetrating the lie that struggling with math is somehow indicative of stupidity.
+                        In the years since junior high I had come to understand one very important thing. I piece of knowledge that no teacher ever felt the need to bestow upon me: 
+                        The fact that you're struggeling with something is not indicative of some inherent inability or shortcoming. 
+                        We all process information differently, and sometimes you just need a little help to shine the light on a subject from a slightly different angle.
+                    </p>
+                    <p>
+                        I came to that realization after I was diagnosed with lupus, and had to put the guitar, my instrument of choice, away. 
+                        I had been working as a guitar player for several years at that point, recoding albums and soloing for orchestras and ensembles. 
+                        I thought I would have to abandon music as well, for some even dumber persuit (that's where the archeology came in), but eventually settled on singing instead. 
+                    </p>
+                    <p>
+                        After about five years of intense practicing I was getting steady work as a singer.
+                        All of this is to say: becoming proficiant enough on a musical instrument to where you can make living out of performing requires a LOT of work. Why wouldn't math be much the same?
+                        One day I woke up and felt resolute. I would quit my job and do whatever I had to do to get an education as a computer engineer.
+                    </p>
+                    <p>That was two years ago, almost to the day.</p>
+                    <p>
+                        I realize that this has been a long setup, but I feel that some context was important for this next part; discussing the experience and challanges of being a first semester student.
+                        I've been one before, and that makes it easier. I know what to expect and I know how much work goes into a degree in higher education. 
+                        I'm also used to long days, and long nights, spent struggling to learn something seemingly un-learnable.
+                    </p>
+                    <p>
+                        In the two years building up to these studies I've recovered my old programming books and repeated all the high school math I could manage to get through. 
+                        Building on my C++, elementary as it might have been, with JAVA has felt quite natural, and having every subject covered in online videos has been a blessing. 
+                        As noted earlier, we all process information differently, so being able to go back and rewatch a part has been invaluable.
+                        Discrete mathematics, on the other hand, has been a real challenge. Not because the math is difficult, but because the book is horrendous.
+                        It's as if the authors started out with a goal to write the most inscrutable sentence imaginable and then spent the rest of the book trying to top it.
+                        There's not a monday or wednesday when I don't praise the cosmos for Eva and all her written notes.
+                    </p>
+                    <figure>
+                        <img class="medium-pluss-img" img src="img/content/P35-OsloMet.jpg" alt="OsloMet" title="OsloMet Pilestredet 35">
+                        <figcaption>
+                            <span>Photo: OsloMet (below)</span>
+                        </figcaption>
+                    </figure>
+                    <p>
+                        Our second child was born the day before the semester started, so this has been a bit of a rough start.
+                        There is no doubt that learing to code, be it HTML, JAVA or CSS, and understanding discrete mathematics benefits greatly from a good night sleep.
+                        With two children, one of them a newborn, I've not had many of those this semester, but I've also come to appreciate that my years of practicing music is paying off.
+                        I'm used to practicing. 
+                        Managing the workload is more about chaos control then planning at this point. I try to work around the unplannable and be as productive as possible when time allows.
+                        Some days are a breeze and I easily get a full workdays worth of focused work done. 
+                        Other days are a nightmare of juggling two children, one with colic and the other with a bad case of jealousy, while my significant other is bedridden with the flu.                        
+                    </p>
+                    <figure>
+                        <img class="medium-img" img src="img/content/javacode.jpg" alt="Some recentJAVA code" title="Managing a parking lot">
+                        <figcaption>
+                            <span>A small JAVA exercise</span>
+                        </figcaption>
+                    </figure>
+                    <p>
+                        I do feel optimistic, however. The exams are approaching. Faster then expected. And time will tell if I've managed my workload effectively.
+                    </p>
+                </article>
+                <article class="resources">
+                    <h3 id="bildeliste">Bilder</h3>
+                    <dl>
+                        <dt> Øye, Olav-Johan (2021). Nå kan du ta årsstudium i informasjonsteknologi. OsloMet:</dt>
+                        <dd><a href="https://www.oslomet.no/om/nyheter/naa-kan-du-ta-arsstudium-i-informasjonsteknologi" target="_blank">https://www.oslomet.no/om/nyheter/naa-kan-du-ta-arsstudium-i-informasjonsteknologi</a></dd>
+                    </dl>
+                </article>
+            </section>
+        </main>
+
+        <!-- SIDE CONTENT -->
+        <aside class="grid-item3">
+            <header>
+                <img src="img/icon/group107_v6.png" alt="">
+                <h2>
+                    The road to OsloMET!
+                </h2>
+                <hr>
+            </header>
+            <section class="aside">
+                <h3>
+                    Early coding 
+                </h3>
+                <ul>
+                    <li>Back in the days of 8-bit computers your PC would, most likely, be booting straight into BASIC. The incentive to learn a little was very strong</li>
+                    <li>Early computers were very DIY-friendly. Not only did they come with schematics but they also came with extensive manuals and programming guides. Making the aforementioned learning experience that much smoother</li>
+                    <li>As IBM/Intel became the defacto platform in computing much of this slowly died away, but even DOS had it's fun quirks. Who doesn't fondly remember trying to free up enough memory to run Doom or making personalized GUI's with autoexec.bat?</li>
+                    <li>As Windows 95 rolled around it pretty much sucked all the fun out of day to day computer usage. config.sys is fun. RegEDIT is not!</li>
+                </ul>
+            </section>
+            <section class="aside">
+                <h3>
+                    High school computer classes
+                </h3>
+                <ul>
+                    <li>During high school I took all the computer classes that were offered. In one we learned Excel on an old black & white Macintosh. In the other we were SUPPOSED to learn C/C++, but as the math teacher in charge of the class didn't know how to code we mostly sat around browsing the internet</li>
+                    <li>I did eventually manage to make a text-adventure game, however. It was epic!</li>
+                    <li>Home built computers became more common around this time and I was fortunate enough to have parents willing to give me a generous budget for a family computer build. This got my interest in x86-compatible hardware going</li>
+                </ul>
+            </section>
+            
+            <!-- SIDE CONTENT -->
+            <section class="aside">
+                <h3>
+                    Music, computers and family
+                </h3>
+                <ul>
+                    <li>I had always had an interest in computer music. Mostly as a technical curiosity. This eventually led me to persue music full time</li>
+                    <li>Although I was working as a musician I prefered to spend my time with my computers. Either repairing, modifying or just exploring software</li>
+                    <li>One day, while working, a client said to me "Wow, It must be so great to be able to make a living doing something you're so passionate about. 
+                        I wish I could go to work every day and just fiddle around with my hobby". This comment got me thinking. I was hardly making a living. 
+                        None of my musician friends were making much above minimum wage, and working all day, every day and on the weekends. 
+                        This REALLY isn't what I'm passionate about. It never was. 
+                        Hell, I never even enjoyed doing this. Getting up on a stage is a nightmare!
+                        I need to find something else to do with my life!</li>
+                    <li>Perhaps I should do what I always wanted to do. It sure couldn't hurt to try!</li>
+            </section>
+        </aside>
+
+        <!-- FOOTER CONTENT -->
+        <footer class="grid-item4">
+            <hr>
+            <p> 
+                This is not Canvas!
+            </p>
+        </footer>
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>

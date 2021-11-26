@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Not Canvas</title>
+</head>
+<body>
+    <div class="main-container">
+
+        <!-- MAIN NAVIGATION -->
+        <header class="grid-item1">
+            <button class="mobile-menu-button mobile-view" onclick="showMobileMenu()"><img src="img/icon/burger.svg" alt=""></button>
+            <h1 class="mobile-h1 mobile-view" aria-label="hidden">Topical Information</h1>
+            <nav id="navbar" class="mobile-nav-hidden">
+                <ul>
+                    <li id="first-button" class="nav-button">
+                        <h2 class="mobile-view">&Omega; NOT-CANVAS</h2>
+                        <button class="mobile-inside-menu-button mobile-view" onclick="showMobileMenu()">X</button>
+                        <a class="button" href="index.html">
+                            <img id="logo" class="logo" src="img/icon/group107_v6.png" alt="logo">
+                        </a>
+                    </li>
+                    <li class="nav-button">
+                        <button class="button nav-button hover" id="about-button" onclick="showAbout()">
+                            <img class="button-icon" src="img/icon/about.svg" alt="Link to *about*-page">
+                            <span class="button-text">About</span>
+                        </button>
+
+                        <!-- HIDDEN NAVIGATION 1 -->
+                        <section id="about-section" class="hidden-nav about hidden" aria-label="hidden">
+                            <button class="exit-button" onclick="showAbout()">X</button>
+                            <h2>Creators of the website</h2>
+                            <hr>
+                            <figure>
+                                <img src="img/icon/about.svg" alt="Image of one of the creators">
+                                <figcaption><p>This is one of the creators</p></figcaption>
+                            </figure>
+                            <figure>
+                                <img src="img/icon/about_hair.svg" alt="">
+                                <figcaption><p>This is another one of the creators</p></figcaption>
+                            </figure>
+                            <figure>
+                                <img src="img/icon/about_caps_v2.svg" alt="">
+                                <figcaption><p>This is the last one of the creators</p></figcaption>
+                            </figure>
+                        </section>
+                    </li>
+
+                    <li class="nav-button hover">
+                        <a class="button" href="index.html">
+                            <img class="button-icon" src="img/icon/cake.svg" alt="Link to *welcome*-page">
+                            <span class="button-text">Welcome</span>
+                        </a>
+                    </li>
+                    <li class="nav-button hover">
+                        <a class="button" href="reflection.html">
+                            <img class="button-icon" src="img/icon/reflection.svg" alt="Link to *reflection*-page">
+                            <span class="button-text">Reflection</span>
+                        </a>
+                    </li>
+                    <li class="nav-button">
+                        <button class="button nav-button hover" id="topical-button" onclick="showTopical()" style="background-color: var(--active-background);">
+                            <img class="button-icon" src="img/icon/topical_information.svg" alt="Link to *topical-information*-page">
+                            <span class="button-text" style="font-weight: var(--active-thickness); color: var(--active-color);">Topical Information</span>
+                        </button>
+
+                        <!-- HIDDEN NAVIGATION 2 -->
+                        <section id="topical-section" class="hidden-list hidden" aria-label="hidden">
+                            <button class="exit-button" onclick="showTopical()">X</button>
+                            <h2>A list of topical essays</h2>
+                            <hr>
+                            <ul class="hidden-nav-link">
+                                <li><a href="fakenews.html">Fake news</a></li>
+                                <li><a href="criticalthinking.html">Critical thinking</a></li>
+                                <li><a href="technologyandadaptment.html">Technology and adaptement</a></li>
+                            </ul>
+                        </section>
+                    </li>
+
+                    <li class="nav-button hover">
+                        <a class="button" href="accessibility.html">
+                            <img class="button-icon" src="img/icon/accesibility.svg" alt="Link to *accessability*-page">
+                            <span class="button-text">Accessibility</span>
+                        </a>
+                    </li>
+                    <li class="nav-button">
+                        <button class="button nav-button hover" id="funny-button" onclick="showFunny()">
+                            <img class="button-icon" src="img/icon/fun_page.svg" alt="Link to *funny stuff*-page">
+                            <span class="button-text">Funny Stuff</span>
+                        </button>
+
+                        <!-- HIDDEN NAVIGATION 3 -->
+                        <section id="funny-section" class="hidden-list hidden" aria-label="hidden">
+                            <button class="exit-button" onclick="showFunny()">X</button>
+                            <h2>Let's have a litte fun, shall we?</h2>
+                            <hr>
+                            <ul class="hidden-nav-link">
+                                <li><a href="funny.html">Your course progress</a></li>
+                                <li><a href="funny2.html">Vacation activities</a></li>
+                                <li>blabla</li>
+                                <li>blabla</li>
+                                <li>blabla</li>
+                                <li>blabla</li>
+                            </ul>
+                        </section>
+                    </li>
+
+                    <li class="hover last-button" onclick="smallNavbar()">
+                        <button class="button nav-button">
+                            <img id="nav-arrow" src="img/icon/arrow.svg" alt="Minimize the sidebar">
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- MAIN CONTENT -->
+        <main class="grid-item2">
+            <section>
+                <header>
+                    <h1>Topical Information</h1>
+                    <hr>
+                    <h2>Technology and adaptment</h2>
+                    <p>4 minutes reading time</p>
+                    <hr>
+                    <ul>
+                        <li><a href="#tech-dap">Technologic Advancement Enforce Adaption</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                    </ul>
+                </header>
+                <article class="flex-article">
+                    <h2 id="tech-dap">Technologic Advancement Enforce Adaption</h2>
+                    <p>
+                        We are at the edge of a technological revolution which is disrupting and transforming the global industry with haste. 
+                        Robotics are producing even more complex parts, with less need of oversight, 
+                        and an increasing number of businesses has started passing down tedious and high-risk jobs to a robotic work-force during the corona pandemic. (Pethokoukis, 2021).
+                    </p>
+                    <p>
+                        AI is no longer a niche; it plays a big role in more than 90% of leading industries. 
+                        So, is the human workforce spiralling towards unemployment? 
+                        Research from M.I.T suggests that AI is driving innovation and growth, 
+                        ultimately creating new job opportunities. Sectors already impacted are medical, automotive, cybersecurity and E-commerce. 
+                        As some parts are being automated, like MRI-diagnosing, we still need human reasoning to complete these tasks. (Stahl, 2021).
+                    </p>
+                    <p>
+                        Between technology and society new positions will arise. Like the need for customised, artisan technology, 
+                        specifically designed to address a company or users’ needs. 
+                        AI- and coding-ethicists will be an ever more important consideration in order to ensure that legal and ethical standards are met before deployment. (Hickok, 2020).
+                    </p>
+                    <figure>
+                        <img class="medium-minus-img" src="img/content/AI.jpg" alt="Robot playing piano" title="Robot playing piano">
+                        <figcaption>
+                            <span>Photo by <a href="https://unsplash.com/@possessedphotography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Possessed Photography</a> on <a href="https://unsplash.com/s/photos/artificial-intelligence?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                            </span>
+                        </figcaption>
+                    </figure>
+                    <p>
+                        AI and robotics are also vital when working towards greener industries, creating a completely new work-market. 
+                        Take garbage-designers for example, developing new waste management systems. (Ioannou, 2019).
+                    </p>
+                    <p>
+                        With companies like SpaceX expanding our reach into space, commercial space-travel is already here, 
+                        bringing exciting positions like commercial space-pilots and space-traffic managers. 
+                        This will become an economical backbone pushing us towards Mars, another big leap, 
+                        which will demand brand new positions such as space-architects and construction experts. (Space Foundation, 2020).
+                    </p>
+                    <figure>
+                        <img class="medium-minus-img" src="img/content/astronauts.jpg" alt="Astronauts on Mars" title="Astronauts on Mars">
+                        <figcaption>
+                            <span>Photo by <a href="https://unsplash.com/@mike_kiev?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mike Kiev</a> on <a href="https://unsplash.com/s/photos/mars?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                            </span>
+                        </figcaption>
+                    </figure>
+                    <p>
+                        <cite>“If you want to know the future, look at the past”</cite> – Albert Einstein. <!-- Cité -->
+                    </p>
+                    <p>
+                        Just like with the industrial revolution, we’re forced to adapt when some jobs vanish and new ones appear.
+                    </p>
+                </article>
+                <article class="resources">
+                    <h3 id="resources">Resources</h3>
+                    <dl>
+                        <dt>Pethokoukis , J. (2021). Workers fear robots and automation from Covid are here to stay. But they create jobs. NBC news:</dt>
+                        <dd><a href="https://www.nbcnews.com/think/opinion/workers-fear-robots-automation-covid-are-here-stay-they-create-ncna1278433" target="_blank">https://www.nbcnews.com/think/opinion/workers-fear-robots-automation-covid-are-here-stay-they-create-ncna1278433</a></dd>
+                        <dt>Stahl, A. (2021). How AI Will Impact The Future Of Work And Life. Forbes:</dt>
+                        <dd><a href="https://www.forbes.com/sites/ashleystahl/2021/03/10/how-ai-will-impact-the-future-of-work-and-life/?sh=2c8a712679a3" target="_blank">https://www.forbes.com/sites/ashleystahl/2021/03/10/how-ai-will-impact-the-future-of-work-and-life/?sh=2c8a712679a3</a></dd>
+                        <dt>Hickok, M. (2020). What does an AI Ethicist do? A Guide for the Why, the What and the How. Medium:</dt>
+                        <dd><a href="https://medium.com/@MerveHickok/what-does-an-ai-ethicist-do-a-guide-for-the-why-the-what-and-the-how-643e1bfab2e9" target="_blank">https://medium.com/@MerveHickok/what-does-an-ai-ethicist-do-a-guide-for-the-why-the-what-and-the-how-643e1bfab2e9</a></dd>
+                        <dt>Ioannou, L., Petrova, M. (2019) America is drowning in garbage. Now robots are being put on duty to help solve the recycling crisis. CNBC:</dt>
+                        <dd><a href="https://www.cnbc.com/2019/07/26/meet-the-robots-being-used-to-help-solve-americas-recycling-crisis.html" target="_blank">https://www.cnbc.com/2019/07/26/meet-the-robots-being-used-to-help-solve-americas-recycling-crisis.html</a></dd>
+                        <dt>Space Foundation. (2021). Industry insight: Space Jobs of the Future. The Space Report:</dt>
+                        <dd><a href="https://www.thespacereport.org/uncategorized/industry-insight-space-jobs-of-the-future/#" target="_blank">https://www.thespacereport.org/uncategorized/industry-insight-space-jobs-of-the-future/#</a></dd>
+                    </dl>
+                </article>
+            </section>
+        </main>
+
+        <!-- SIDE CONTENT -->
+        <aside class="grid-item3">
+            <header>
+                <img src="img/icon/group107_v6.png" alt="">
+                <h2>
+                    Quick-bits!
+                </h2>
+                <hr>
+            </header>
+            <section class="aside">
+                <h3>Elaboration</h3>
+                <dl>
+                    <dt>M.I.T</dt>
+                    <dd>Massechusetts Institute of Technology. Is a private land-grant research university in Cambridge, Massachusetts. Established in 1861, MIT has since played a key role in the development of modern technology and science and has been ranked among the top academic institutions in the world.</dd>
+                    <dt>Greener Industries</dt>
+                    <dd>E.x. Green Industrial Policy. Which is a strategic government policy that attempts to accelerate the development and growth of green industries to transition towards a low-carbon economy.</dd>
+                    <dt>SpaceX</dt>
+                    <dd>Space Exploration Technologies Corp. Is an American aerospace manufacturer, space transportation services and communications corporation headquartered in Hawthorne, California. SpaceX was founded in 2002 by Elon Musk with the goal of reducing space transportation costs to enable the colonization of Mars.</dd>
+                
+                </dl>
+
+                <h3>Words:</h3>
+                <dl>
+                    <dt>E-commerce</dt>
+                    <dd>-Electronic commerce. Refers to a business model that allows companies and individuals to buy and sell goods and services over the Internet.</dd>
+                </dl>
+            </section>
+        </aside>
+
+        <!-- FOOTER CONTENT -->
+        <footer class="grid-item4">
+            <hr>
+            <p> 
+                This is not Canvas!
+            </p>
+        </footer>
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>
